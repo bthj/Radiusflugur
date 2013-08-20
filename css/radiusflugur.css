@@ -1,0 +1,20 @@
+body, #radiusflugur {
+	background-color:#f0f0f0;
+}
+
+.random-wrapper {
+    width:200px;
+    height:200px;
+    float:left;
+    background: url("../circle.skin/bgr.jpg") 0 0 no-repeat;
+}
+.random-wrapper img {
+    position:relative;
+    top:75px;
+    left:75px;
+}
+.player-wrapper {
+	width:200px;
+	/*margin: 0 auto;*/
+    margin-left:auto;
+}

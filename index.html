@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Radíusflugur</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!--
+        <script src="phonegap.js"></script>
+        <script src="GAPlugin.js"></script>
+    -->
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.css">
+		<link rel="stylesheet" href="circle.skin/circle.player.css">
+        
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview-pull.css"/>
+        
+        <link rel="stylesheet" href="css/radiusflugur.css" />
+        
+        
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <!-- script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script -->
+        <script src="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.js"></script>
+        
+		<script type="text/javascript" src="js/jquery.transform.js"></script>
+		<script type="text/javascript" src="js/jquery.grab.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		<script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+		<script type="text/javascript" src="js/circle.player.js"></script>
+        
+        <script src="js/iscroll.js"></script>
+        <script src="js/jquery.mobile.iscrollview.js"></script>
+        
+        <script src="js/jQueryRotateCompressed.js"></script>
+        
+        <script src="js/radiusflugur.js"></script>
+    </head>
+    
+    <body>
+        
+
+        
+		<!-- This is the 2nd instance's jPlayer div -->
+		<div id="jquery_jplayer_2" class="cp-jplayer"></div>
+    
+        <div data-role="page" id="radiusflugur">
+            
+            <div data-role="header">
+            
+                <div class="random-wrapper">
+                    <img src="assets/graphics/dice.svg" width="50px" />
+                </div>
+                
+                <div class="player-wrapper">
+        
+                    <!-- This is the 2nd instance HTML -->
+        
+                    <div id="cp_container_2" class="cp-container">
+                        <div class="cp-buffer-holder">
+                            <div class="cp-buffer-1"></div>
+                            <div class="cp-buffer-2"></div>
+                        </div>
+                        <div class="cp-progress-holder">
+                            <div class="cp-progress-1"></div>
+                            <div class="cp-progress-2"></div>
+                        </div>
+                        <div class="cp-circle-control"></div>
+                        <ul class="cp-controls">
+                            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+                            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+                        
+            <div id="fluguscroll" data-role="content" data-iscroll>
+                <ul data-role="listview" id="flugulisti">
+                
+                </ul>
+            </div>
+            
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" data-id="footer">
+                <h1><a href="">Um radíusflugur</a></h1>
+            </div>
+
+        </div>
+        
+    </body>
+    
+</html>
