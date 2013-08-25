@@ -49,11 +49,8 @@
     
         <div data-role="page" id="radiusflugur">
             
-            <div data-role="header">
-            
-                <div class="random-wrapper">
-                    <img src="assets/graphics/dice.svg" width="50px" />
-                </div>
+            <div data-role="header" id="fluguhaus">
+                
                 
                 <div class="player-wrapper">
         
@@ -77,6 +74,22 @@
                     
                 </div>
                 
+                
+                <div class="sharing-wrapper">
+                    <img src="assets/graphics/sharing.svg" height="25px" />
+                </div>
+                
+                <div class="random-wrapper">
+                    <img src="assets/graphics/dice.svg" width="25px" />
+                </div>
+                
+                <div class="logo-wrapper">
+                    <img src="assets/graphics/flugulogo_gray_x150.png" />
+                </div>
+
+                
+
+                
             </div>
                         
             <div id="fluguscroll" data-role="content" data-iscroll>
@@ -86,9 +99,40 @@
             </div>
             
             <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" data-id="footer">
-                <h1><a href="">Um radíusflugur</a></h1>
+                <h4></h4>
+                <a href="#info" data-rel="dialog" data-icon="info" class="ui-btn-left">Um flugur</a>
+                <a href="#scheduling" data-rel="dialog" data-icon="gear" class="ui-btn-right">Flugufregnir</a>
             </div>
 
+        </div>
+        
+        <div data-role="dialog" id="info">
+            <div data-role="header" data-theme="d">
+                <h1>Um Radíusflugur</h1>
+            </div>
+            <div data-role="content">
+                <p>Davíð Þór Jónsson og Steinn Ármann Magnússon fluttu Radíusflugur á Aðalstöðinni árin 1992 til 1994...</p>
+            </div>
+        </div>
+        
+        <div data-role="dialog" id="sharing">
+            <div data-role="header" data-theme="d">
+                <h1>Deiling</h1>
+            </div>
+            <div data-role="content">
+                <p>Deila flugu á facebook og susslags...</p>
+            </div>
+        </div>
+        
+        <div data-role="dialog" id="scheduling">
+            <div data-role="header" data-theme="d">
+                <h1>Flugufregnir</h1>
+            </div>
+            <div data-role="content">
+                <p>
+                    Fáðu flugur í apparatið þitt, daglega eða vikulega...
+                </p>
+            </div>
         </div>
         
     </body>

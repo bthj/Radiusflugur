@@ -135,12 +135,21 @@ $(function () {  // document ready
                 highlightActiveListItem();
             }
         });
+        $(".logo-wrapper img").rotate({
+            duration:2500,
+            angle: 0, 
+            animateTo:360
+        });
         
         scrollToActiveListItem();
         
         playFluga();
         
         updateUrlHash(fluga);
+    });
+    
+    $(".sharing-wrapper").click(function(){
+        $.mobile.changePage( "#sharing", { role: "dialog" } );
     });
     
     

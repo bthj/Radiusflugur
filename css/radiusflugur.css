@@ -2,19 +2,58 @@ body, #radiusflugur {
 	background-color:#f0f0f0;
 }
 
-.random-wrapper {
-    width:200px;
-    height:200px;
+h4 a {
+    color: rgb(96,140,0)!important;
+}
+ul li a {
+    color: rgb(255,255,255)!important;
+}
+
+#fluguhaus {
+    text-align:center;
+}
+
+@media screen and (max-width: 500px) {
+    /*.logo-wrapper {
+        visibility:hidden;
+    }*/
+    .logo-wrapper img {
+        content:url("../assets/graphics/flugulogo_gray_x50.png");
+        margin-top: 50px;
+    }
+}
+.logo-wrapper {
+    height:175px;
+    margin:auto;
+    padding-top:25px;
+}
+.logo-wrapper img {
+    /*width: calc(70% - 300px);*/
+}
+
+.random-wrapper, .sharing-wrapper {
+    width:100px;
+    height:100px;
     float:left;
-    background: url("../circle.skin/bgr.jpg") 0 0 no-repeat;
+    background: url("../assets/graphics/btn_bgr_x100.png") 0 0 no-repeat;
+    margin-left: 10px;
+}
+.random-wrapper {
+    clear:left;
+}
+.sharing-wrapper img {
+    position:relative;
+    top:37px;
+    left:0px;
 }
 .random-wrapper img {
     position:relative;
-    top:75px;
-    left:75px;
+    top:37px;
+    left:0px;
 }
 .player-wrapper {
 	width:200px;
 	/*margin: 0 auto;*/
-    margin-left:auto;
+    /*margin-left:auto;*/
+    float:right;
 }
