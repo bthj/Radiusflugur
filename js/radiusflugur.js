@@ -86,7 +86,7 @@ $(function () {  // document ready
         updateUrlHash(fluga);
     });
     
-    $('#flugulisti').on('click', 'li', function () {
+    $('#flugulisti').on('click', 'li', function (event) {
        event.preventDefault(); 
     });        
     

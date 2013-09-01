@@ -57,3 +57,6 @@ ul li a {
     /*margin-left:auto;*/
     float:right;
 }
+.iscroll-scroller {
+    width:100%;
+}
